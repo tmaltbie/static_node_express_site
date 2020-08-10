@@ -4,6 +4,7 @@ const { projects } = require('../data/data.json');
 
 /* GET home page */
 router.get('/', (req, res) => {
+  console.log({projects})
   res.render('index', { projects });
 });
 
@@ -15,14 +16,11 @@ router.get('/projects/:id', (req, res, next) => {
   if (project) {
     res.render('project', { project }); 
   } else {
-    res.sendStatus(404); 
+    const err = new Error('Not Found');
+    err.status = 404;
+    next(err);
   }
 });
-
-// // if user accidentally gets directed to /projects without an id
-// router.get('/projects', (req, res) => {
-//   res.redirect('/');
-// })
 
 /* GET about page */
 router.get('/about', (req, res) => {

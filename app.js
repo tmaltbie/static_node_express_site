@@ -1,6 +1,6 @@
 // Import Express and set up the app
 const express = require('express');
-const path = require('path');
+// const path = require('path');
 const app = express();
 
 // access routes
