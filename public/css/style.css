@@ -49,6 +49,7 @@ a:hover{
 .image{
   display: inline-block;
   max-width: 100%;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   border: solid 4px #fefefe;
   border-radius: 0;
@@ -147,4 +148,10 @@ a:hover{
 
 .portfolio-bio{
     line-height: 25px;
+}
+
+.error {
+  max-width: 100%;
+  margin-left: 2rem;
+  margin-top: 2rem;
 }

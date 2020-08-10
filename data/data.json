@@ -7,7 +7,7 @@
       "technologies": ["JavaScript", "HTML", "CSS"],
       "live_link": "https://tmaltbie.github.io/randomQuoteGenerator/",
       "github_link": "https://github.com/tmaltbie/randomQuoteGenerator",
-      "image_urls": ["/static/images/randomquote_1.png", "/static/images/randomquote_2.png"]
+      "image_urls": ["/static/images/randomquote_1.png", "/static/images/randomquote_2.png", "/static/images/randomQuote_3.png", "/static/images/randomQuoteGif.gif"]
     },
     {
       "id": 1,
@@ -16,7 +16,8 @@
       "technologies": ["JavaScript", "HTML", "CSS"],
       "live_link": "https://tmaltbie.github.io/pagination/",
       "github_link": "https://github.com/tmaltbie/pagination",
-      "image_urls": ["/static/images/pagination_1.png", "/static/images/pagination_2.png"]
+      "image_urls": ["/static/images/pagination_main.png", "/static/images/pagination_lastPage.png", 
+                      "/static/images/pagination_smallSearch.png", "/static/images/pagination_noResults.png"]
     },
     {
       "id": 2,
@@ -43,7 +44,7 @@
       "technologies": ["JavaScript", "HTML", "CSS", "Fetch API"],
       "live_link": "https://tmaltbie.github.io/public_api_request/",
       "github_link": "https://github.com/tmaltbie/public_api_request",
-      "image_urls": ["/staticimages/api_1.png", "/static/images/api_2.png"]
+      "image_urls": ["/static/images/api_1.png", "/static/images/api_2.png"]
     },
     {
       "id": 5,
@@ -52,7 +53,7 @@
       "technologies": ["JavaScript", "HTML", "CSS"],
       "live_link": "https://dinosaur-quiz.webflow.io",
       "github_link": "",
-      "image_urls": ["/static/images/dinosaurquiz_1", "/static/images/dinosaurquiz_2.png"]
+      "image_urls": ["/static/images/dinosaurquiz_1.png", "/static/images/dinosaurquiz_2.png"]
     }
   ]
 }
