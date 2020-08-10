@@ -1,0 +1,58 @@
+{
+  "projects": [
+    {
+      "id": 0,
+      "project_name": "Random Quote Generator",
+      "description": "Displays random quotes from an array of objects.",
+      "technologies": ["JavaScript", "HTML", "CSS"],
+      "live_link": "https://tmaltbie.github.io/randomQuoteGenerator/",
+      "github_link": "https://github.com/tmaltbie/randomQuoteGenerator",
+      "image_urls": ["/static/images/randomquote_1.png", "/static/images/randomquote_2.png"]
+    },
+    {
+      "id": 1,
+      "project_name": "List Pagination and Filtering",
+      "description": "Use 'pagination' to display and navigate long list of students. Includes a search filter.",
+      "technologies": ["JavaScript", "HTML", "CSS"],
+      "live_link": "https://tmaltbie.github.io/pagination/",
+      "github_link": "https://github.com/tmaltbie/pagination",
+      "image_urls": ["/static/images/pagination_1.png", "/static/images/pagination_2.png"]
+    },
+    {
+      "id": 2,
+      "project_name": "Interactive Form",
+      "description": "Enhance a registration form with conditional behavior and interactivty, validating user input with Regular Expressions and helpful error messages.",
+      "technologies": ["JavaScript", "HTML", "CSS", "Regular Expressions"],
+      "live_link": "https://tmaltbie.github.io/interactive-form/",
+      "github_link": "https://github.com/tmaltbie/interactive-form",
+      "image_urls": ["/static/images/form_1.png", "/static/images/form_2.png"]
+    },
+    {
+      "id": 3,
+      "project_name": "OOP Game Show App",
+      "description": "Browser-based word guessing game created with JavaScript and Object-Oriented Programming.",
+      "technologies": ["JavaScript", "HTML", "CSS", "Object Oriented Programming"],
+      "live_link": "https://tmaltbie.github.io/oop_game/",
+      "github_link": "https://github.com/tmaltbie/oop_game",
+      "image_urls": ["/static/images/gameshow_1.png", "/static/images/gameshow_2.png"]
+    },
+    {
+      "id": 4,
+      "project_name": "Public API Requests",
+      "description": "Request JSON object from public API and asynchronously handle data to display fictional company employee directory.",
+      "technologies": ["JavaScript", "HTML", "CSS", "Fetch API"],
+      "live_link": "https://tmaltbie.github.io/public_api_request/",
+      "github_link": "https://github.com/tmaltbie/public_api_request",
+      "image_urls": ["/staticimages/api_1.png", "/static/images/api_2.png"]
+    },
+    {
+      "id": 5,
+      "project_name": "JavaScript Quiz",
+      "description": "Online quiz utilizing JavaScript and designed with Webflow.",
+      "technologies": ["JavaScript", "HTML", "CSS"],
+      "live_link": "https://dinosaur-quiz.webflow.io",
+      "github_link": "",
+      "image_urls": ["/static/images/dinosaurquiz_1", "/static/images/dinosaurquiz_2.png"]
+    }
+  ]
+}
