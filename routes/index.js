@@ -20,9 +20,9 @@ router.get('/', (req, res, next) => {
   if (err.status === 400) {
     err.message = `The requested URL ${path} was not found on this server.`
   }
-  console.log("message:", err.message)
-  console.log("status:", err.status)
-  console.log("stack:", err.stack)
+  console.log("get error route message:", err.message)
+  console.log("get error route status:", err.status)
+  console.log("get error route stack:", err.stack)
   throw err
 });
 
