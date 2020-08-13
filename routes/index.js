@@ -14,8 +14,15 @@ router.get('/about', (req, res) => {
 
 /* GET error route - create + throw 500 server error */
 router.get('/', (req, res, next) => {
+  console.log('non-projects error thrown:')
   const err = new Error()
   err.status = 500
+  if (err.status === 400) {
+    err.message = `The requested URL ${path} was not found on this server.`
+  }
+  console.log("message:", err.message)
+  console.log("status:", err.status)
+  console.log("stack:", err.stack)
   throw err
 });
 

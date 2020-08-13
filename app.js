@@ -38,11 +38,17 @@ app.use((req, res, next) => {
 
 // the global error handler
 app.use((err, req, res, next) => {
+  err.status = err.status || 500;
+  
+
   if (err) {
     console.log('Global error handler has been called:', err);
   }
   
   if (err.status === 404 ) {
+    res.locals.path = req.path;
+    const path = req.path;
+    err.message = `The requested URL ${path} was not found on this server.`
     res.render('not-found', { err });
     
   } else {
@@ -50,9 +56,9 @@ app.use((err, req, res, next) => {
     // res.locals.path = req.path;
     // const path = req.path;
 
-    err.status = err.status || 500;
     err.message = err.message || `It looks like something went wrong.`;
     res.status(err.status || 500).render('error', { err });
+    
   } 
 })
 

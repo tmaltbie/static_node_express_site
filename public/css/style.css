@@ -168,7 +168,7 @@ a:hover{
 }
 
 /* index projects overlay */
-.cell {
+.projects {
   position: relative;
 }
 
@@ -177,27 +177,24 @@ a:hover{
   position: absolute;
   /* background-color: #99b898; */
   background-color: #478043;
-  height: 99.35%;
   width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
   padding: 15px;
   transition: opacity 0.5s
-  
-  content h2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.cell:hover .overlay {
+.projects:hover .overlay {
   opacity: .80;
 }
 
-.cell h2 {
+/* .cell h5 {
   position: absolute;
   color: #fff;
   font-weight: bolder;
   text-transform: uppercase;
-} 
+}  */
 
 
 /* layout quote */
