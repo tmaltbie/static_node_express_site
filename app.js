@@ -25,24 +25,33 @@ app.use('/', indexRouter);
 /* 404 handler to catch undefined or non-existent route requests */ 
 app.use((req, res, next) => {
   console.log('404 error handler called');
-  res.status(404).render('not-found');
+  
+  // access to URL causing error
+  res.locals.path = req.path;
+  const path = req.path;
+
+  const err = new Error();
+  err.status = 404;
+
+  res.status(404).render('not-found', {err})
 });
 
 // the global error handler
 app.use((err, req, res, next) => {
   if (err) {
-    console.log('Global error handler has been called:', err)
+    console.log('Global error handler has been called:', err);
   }
   
   if (err.status === 404 ) {
-    res.status(404).render('not-found', { err });
+    res.render('not-found', { err });
     
   } else {
-    console.log('else statement of global handler called')
 
-    err.message = err.message || `It looks like something went wrong.`
-    res.locals.path = req.path
-    const path = req.path
+    // res.locals.path = req.path;
+    // const path = req.path;
+
+    err.status = err.status || 500;
+    err.message = err.message || `It looks like something went wrong.`;
     res.status(err.status || 500).render('error', { err });
   } 
 })
@@ -51,5 +60,5 @@ app.use((err, req, res, next) => {
 
 // Turn on Express server
 app.listen(3000, () => {
-  console.log('The app is running on localhost 3000')
+  console.log('The app is running on localhost 3000');
 });

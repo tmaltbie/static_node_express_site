@@ -197,3 +197,14 @@ a:hover{
   font-weight: bolder;
   text-transform: uppercase;
 } 
+
+.quote {
+  padding-top: 3rem;
+  font-style: italic;
+}
+
+/* .experience h6,
+.experience ul {
+  text-indent: 1em;
+
+} */

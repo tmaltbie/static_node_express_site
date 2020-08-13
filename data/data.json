@@ -3,11 +3,11 @@
     {
       "id": 0,
       "project_name": "Random Quote Generator",
-      "description": "Displays random quotes from an array of objects.",
+      "description": "Generate random quotes from an array of objects.",
       "technologies": ["JavaScript", "HTML", "CSS"],
       "live_link": "https://tmaltbie.github.io/randomQuoteGenerator/",
       "github_link": "https://github.com/tmaltbie/randomQuoteGenerator",
-      "image_urls": ["/static/images/randomquote_1.png", "/static/images/randomquote_2.png", "/static/images/randomQuote_3.png", "/static/images/randomQuoteGif.gif"]
+      "image_urls": ["/static/images/randomquote_1.png", "/static/images/randomquote_2.png", "/static/images/randomQuote_3.png", "/static/images/randomQuote_4.png"]
     },
     {
       "id": 1,
@@ -22,11 +22,11 @@
     {
       "id": 2,
       "project_name": "Interactive Form",
-      "description": "Enhance a registration form with conditional behavior and interactivty, validating user input with Regular Expressions and helpful error messages.",
+      "description": "Enhanced registration form with conditional behavior and interactivty, validating user input with Regular Expressions and helpful error messages.",
       "technologies": ["JavaScript", "HTML", "CSS", "Regular Expressions"],
       "live_link": "https://tmaltbie.github.io/interactive-form/",
       "github_link": "https://github.com/tmaltbie/interactive-form",
-      "image_urls": ["/static/images/form_1.png", "/static/images/form_2.png"]
+      "image_urls": ["/static/images/form_1.png", "/static/images/form_2.png", "/static/images/form_3.png", "/static/images/form_4.png"]
     },
     {
       "id": 3,
@@ -35,7 +35,7 @@
       "technologies": ["JavaScript", "HTML", "CSS", "Object Oriented Programming"],
       "live_link": "https://tmaltbie.github.io/oop_game/",
       "github_link": "https://github.com/tmaltbie/oop_game",
-      "image_urls": ["/static/images/gameshow_1.png", "/static/images/gameshow_2.png"]
+      "image_urls": ["/static/images/gameshow_1.png", "/static/images/gameshow_2.png", "/static/images/gameshow_3.png", "/static/images/gameshow_4.png"]
     },
     {
       "id": 4,
@@ -44,16 +44,16 @@
       "technologies": ["JavaScript", "HTML", "CSS", "Fetch API"],
       "live_link": "https://tmaltbie.github.io/public_api_request/",
       "github_link": "https://github.com/tmaltbie/public_api_request",
-      "image_urls": ["/static/images/api_1.png", "/static/images/api_2.png"]
+      "image_urls": ["/static/images/api_1.png", "/static/images/api_2.png", "/static/images/api_3.png", "/static/images/api_4.png"]
     },
     {
       "id": 5,
       "project_name": "Dinosaur Quiz",
-      "description": "Online quiz utilizing JavaScript and designed with Webflow.",
-      "technologies": ["JavaScript", "HTML", "CSS"],
+      "description": "Online quiz utilizing JavaScript. Designed with Webflow.",
+      "technologies": ["JavaScript", "HTML", "CSS", "Webflow"],
       "live_link": "https://dinosaur-quiz.webflow.io",
       "github_link": "",
-      "image_urls": ["/static/images/dinosaurquiz_1.png", "/static/images/dinosaurquiz_2.png"]
+      "image_urls": ["/static/images/dinosaurquiz_1.png", "/static/images/dinosaurquiz_2.png", "/static/images/dinosaurquiz_3.png", "/static/images/dinosaurquiz_4.png"]
     }
   ]
 }
