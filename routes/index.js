@@ -15,9 +15,13 @@ router.get('/about', (req, res) => {
 /* GET error route - create + throw 500 server error */
 router.get('/error', (req, res, next) => {
   console.log('this is the 500 custom error')
+
+  res.locals.path = req.path
+  const path = req.path
+
   const err = new Error()
+  err.message = `This may not be your fault but check the URL: ${path}`
   err.status = 500;
-  err.message = `It's not your fault. There is an error on our end.`
   throw err
 });
 
@@ -25,8 +29,12 @@ router.get('/error', (req, res, next) => {
 router.get('/projects/:id', (req, res, next) => {
   const projectId = req.params.id;
   const project = projects.find( ({ id }) => id === parseInt(projectId) );
+  console.log(`projects ${project} route called`);
+
+  // URL after /projects/
   res.locals.path = req.path
   const path = req.path
+
   if (project) {
     res.render('project', { project }); 
   } else {
