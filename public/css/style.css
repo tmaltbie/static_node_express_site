@@ -36,7 +36,7 @@ h1,h2,h3,h4,h5,p{
 }
 
 .button:hover{
-  background-color: #111;
+  background-color: #478043;  
 }
 
 a{
@@ -167,7 +167,7 @@ a:hover{
   word-wrap: break-word;
 }
 
-
+/* index projects overlay */
 .cell {
   position: relative;
 }
@@ -175,7 +175,8 @@ a:hover{
 .overlay {
   opacity: 0;
   position: absolute;
-  background-color: #99b898;
+  /* background-color: #99b898; */
+  background-color: #478043;
   height: 99.35%;
   width: 100%;
   padding: 15px;
@@ -188,23 +189,20 @@ a:hover{
 }
 
 .cell:hover .overlay {
-  opacity: .85;
+  opacity: .80;
 }
 
 .cell h2 {
-  opacity: 1;
-  color: #000;
+  position: absolute;
+  color: #fff;
   font-weight: bolder;
   text-transform: uppercase;
 } 
 
+
+/* layout quote */
 .quote {
-  padding-top: 3rem;
+  padding-top: 2.5rem;
   font-style: italic;
 }
 
-/* .experience h6,
-.experience ul {
-  text-indent: 1em;
-
-} */
