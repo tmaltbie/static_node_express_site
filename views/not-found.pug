@@ -1,9 +1,11 @@
 extends layout
 block content
-  section.error
-    p
-      h4= `${error.message} - `
-        b= error.status
-        h5= `The requested URL ${path} was not found on this server.`
-          nav.grid-container.portfolio-breadcrumb
-            a(href='/') ← Back
+  div.error
+    h2= `${err.status} - Page Not Found`
+    p= `The requested URL ${path} was not found on this server.`
+    p= `${err.message}`
+    nav.portfolio-breadcrumb
+      a(href='/') ← Back
+    pre= `${err.stack}`
+
+        

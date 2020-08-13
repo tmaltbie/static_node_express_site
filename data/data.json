@@ -48,7 +48,7 @@
     },
     {
       "id": 5,
-      "project_name": "JavaScript Quiz",
+      "project_name": "Dinosaur Quiz",
       "description": "Online quiz utilizing JavaScript and designed with Webflow.",
       "technologies": ["JavaScript", "HTML", "CSS"],
       "live_link": "https://dinosaur-quiz.webflow.io",

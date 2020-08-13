@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
 
 h1,h2,h3,h4,h5,p{
   font-family: 'Merriweather', serif;
@@ -150,8 +151,49 @@ a:hover{
     line-height: 25px;
 }
 
+/* Error Templates */
 .error {
   max-width: 100%;
   margin-left: 2rem;
   margin-top: 2rem;
 }
+
+.error h2, h3 {
+  margin-bottom: 1.5rem;
+}
+
+.error pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+
+.cell {
+  position: relative;
+}
+
+.overlay {
+  opacity: 0;
+  position: absolute;
+  background-color: #99b898;
+  height: 99.35%;
+  width: 100%;
+  padding: 15px;
+  transition: opacity 0.5s
+  
+  content h2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell:hover .overlay {
+  opacity: .85;
+}
+
+.cell h2 {
+  opacity: 1;
+  color: #000;
+  font-weight: bolder;
+  text-transform: uppercase;
+} 

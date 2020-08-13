@@ -1,13 +1,13 @@
 // Import Express and set up the app
 const express = require('express');
-// const path = require('path');
+const path = require('path');
 const app = express();
 
 // access routes
 const indexRouter = require('./routes/index');
 
 // view engine setup
-// app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
 // add static middleware
@@ -15,29 +15,34 @@ app.use('/static', express.static('public'));
 
 // handle post and put requests
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 
 // use routes
 app.use('/', indexRouter);
 
-/*
-* 404 and Global Error Handlers
-*/
+/* ERROR HANDLERS */
 
-// this creates error object and hands it off to the handler
+/* 404 handler to catch undefined or non-existent route requests */ 
 app.use((req, res, next) => {
-  const err = new Error('Not Found');
-  err.status = 404;
-  next(err);
+  console.log('404 error handler called');
+  res.status(404).render('not-found');
 });
 
-// error handler
+// the global error handler
 app.use((err, req, res, next) => {
-  res.locals.error = err;
-  res.locals.path = req.path
-  console.log(req.path)
-  res.status(err.status)
-  res.render('error');
+  if (err) {
+    console.log('Global error handler has been called:', err)
+  }
+  
+  if (err.status === 404) {
+    res.status(404).render('not-found', { err });
+    
+  } else {
+    err.message = err.message || `It looks like something went wrong.`
+    res.locals.path = req.path
+    const path = req.path
+    res.status(err.status || 500).render('error', { err });
+  }
 })
 
 // Turn on Express server
