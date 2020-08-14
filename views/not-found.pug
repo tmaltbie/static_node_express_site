@@ -2,10 +2,9 @@ extends layout
 block content
   div.error
     h2= `${err.status} - Page Not Found`
-    h3= `The requested URL ${path} was not found on this server.`
     h5= `${err.message}`
     nav.portfolio-breadcrumb
       a(href='/') ← Back
+    br
+    br
     pre= `${err.stack}`
-
-        

@@ -5,6 +5,8 @@ const app = express();
 
 // access routes
 const indexRouter = require('./routes/index');
+// const errorHandler = require('./routes/errorHandler')
+const { render } = require('pug');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -19,50 +21,41 @@ app.use(express.urlencoded({ extended: true }));
 
 // use routes
 app.use('/', indexRouter);
-
+// app.use('/', errorHandler)
 /* ERROR HANDLERS */
 
 /* 404 handler to catch undefined or non-existent route requests */ 
 app.use((req, res, next) => {
-  console.log('404 error handler called');
+
+  console.log('404 Error Handler Activated');
   
-  // access to URL causing error
   res.locals.path = req.path;
   const path = req.path;
 
-  const err = new Error();
+  const err = new Error(`The requested URL ${path} was not found on this server.`);
   err.status = 404;
+  
+  console.error("from 404 handler:", err.message);
+  console.error("from 404 handler this is err.status:", err.status);
 
-  res.status(404).render('not-found', {err})
+  res.status(404).render('not-found', {err});
 });
 
-// the global error handler
+/* the global error handler */
 app.use((err, req, res, next) => {
+  console.log('Global Error Handler Activated');
+
   err.status = err.status || 500;
-  
 
-  if (err) {
-    console.log('Global error handler has been called:', err);
-  }
-  
-  if (err.status === 404 ) {
-    res.locals.path = req.path;
-    const path = req.path;
-    err.message = `The requested URL ${path} was not found on this server.`
-    res.render('not-found', { err });
-    
+  if (err.status === 404) {
+    res.render('not-found', {err})
   } else {
+    err.message = err.message || 'Oops, something went wrong.'
+    res.status(err.status).render('error', {err})
+  }
 
-    // res.locals.path = req.path;
-    // const path = req.path;
-
-    err.message = err.message || `It looks like something went wrong.`;
-    res.status(err.status || 500).render('error', { err });
-    
-  } 
-})
-
-
+  next(err)
+});
 
 // Turn on Express server
 app.listen(3000, () => {

@@ -13,16 +13,15 @@ router.get('/about', (req, res) => {
 })
 
 /* GET error route - create + throw 500 server error */
-router.get('/', (req, res, next) => {
+router.get('/', (res, req, next) => {
   console.log('non-projects error thrown:')
+
   const err = new Error()
   err.status = 500
-  if (err.status === 400) {
+
+  if (err.status === 404) {
     err.message = `The requested URL ${path} was not found on this server.`
   }
-  console.log("get error route message:", err.message)
-  console.log("get error route status:", err.status)
-  console.log("get error route stack:", err.stack)
   throw err
 });
 
@@ -31,15 +30,15 @@ router.get('/projects/:id', (req, res, next) => {
   const projectId = req.params.id;
   const project = projects.find( ({ id }) => id === parseInt(projectId) );
 
-  console.log(`project ${projectId} route called`);
-
   // URL after /projects/
   res.locals.path = req.path
   const path = req.path
 
   if (project) {
+    // if project id exists, render corresponding project
     res.render('project', { project }); 
   } else {
+    // if project id does not exist, show a specific error for /projects/#
     const err = new Error();
     err.status = 404;
     err.message = `Looks like the project you requested doesn't exist... yet.`
