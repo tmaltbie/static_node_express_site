@@ -14,8 +14,6 @@ router.get('/about', (req, res) => {
 
 /* GET error route - create + throw 500 server error */
 router.get('/', (res, req, next) => {
-  console.log('non-projects error thrown:')
-
   const err = new Error()
   err.status = 500
 
