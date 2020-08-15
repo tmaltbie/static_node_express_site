@@ -4,4 +4,6 @@ My portfolio website made with Node, Express, and Pug.
 
 Major CSS Changes:
   Project overlays
+  Project image sizes
+  
   

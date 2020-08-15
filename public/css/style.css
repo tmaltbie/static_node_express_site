@@ -175,10 +175,13 @@ a:hover{
 .overlay {
   opacity: 0;
   position: absolute;
-  /* background-color: #99b898; */
-  background-color: #478043;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99b898;
+  /* background-color: #478043; */
   width: 100%;
-  height: 100%;
+  height: 98%;
   left: 0;
   top: 0;
   padding: 15px;
@@ -186,16 +189,17 @@ a:hover{
 }
 
 .projects:hover .overlay {
-  opacity: .80;
+  opacity: .9;
 }
 
-/* .cell h5 {
+.cell .overlay h5 {
   position: absolute;
-  color: #fff;
+  color: #262626;
+  text-align: center;
+  justify-content: center;
   font-weight: bolder;
   text-transform: uppercase;
-}  */
-
+}
 
 /* layout quote */
 .quote {
@@ -203,6 +207,7 @@ a:hover{
   font-style: italic;
 }
 
-/* .projects img {
-
-} */
+.projects img {
+ width: 500px;
+ height: 195px; 
+}
