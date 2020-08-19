@@ -4,7 +4,6 @@ const path = require('path');
 const app = express();
 const port = process.env.PORT || 3000;
 const http = require('http');
-const hostname = '127.0.0.1';
 
 // access routes
 const indexRouter = require('./routes/index');
@@ -28,6 +27,6 @@ app.use(errorHandler.handleNotFound)
 app.use(errorHandler.handleGlobalErrors)
 
 // Turn on Express server
-app.listen(port, hostname, () => {
+app.listen(port, () => {
   console.log('The app is running on localhost 3000');
 });
