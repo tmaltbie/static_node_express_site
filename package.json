@@ -11,6 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/tmaltbie/static_node_express_site.git"
   },
+  "engines": {
+    "node": "12.15.0"
+  },
   "author": "Trevor Page Maltbie",
   "license": "MIT",
   "bugs": {
