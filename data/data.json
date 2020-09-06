@@ -62,7 +62,7 @@
       "technologies": ["React", "React Router", "JavaScript", "HTML", "CSS"],
       "live_link": "",
       "github_link": "https://github.com/tmaltbie/react_gallery_app",
-      "image_urls": ["/static/images/react_gallery_home_1", "/static/images/react_gallery_cats_2", "/static/images/react_gallery_notfound_3", "/static/images/react_gallery_404_4" ]
+      "image_urls": ["/static/images/react_gallery_home_1.png", "/static/images/react_gallery_cats_2.png", "/static/images/react_gallery_notfound_3.png", "/static/images/react_gallery_404_4.png" ]
     }
   ]
 }
