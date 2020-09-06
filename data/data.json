@@ -54,6 +54,15 @@
       "live_link": "https://dinosaur-quiz.webflow.io",
       "github_link": "",
       "image_urls": ["/static/images/dinosaurquiz_1.png", "/static/images/dinosaurquiz_2.png", "/static/images/dinosaurquiz_3.png", "/static/images/dinosaurquiz_4.png"]
+    },
+    {
+      "id": 6,
+      "project_name": "React Gallery App",
+      "description": "Web app built with React library built in the single page application style to display images from Flickr API.",
+      "technologies": ["React", "React Router", "JavaScript", "HTML", "CSS"],
+      "live_link": "",
+      "github_link": "https://github.com/tmaltbie/react_gallery_app",
+      "image_urls": ["/static/images/react_gallery_home_1", "/static/images/react_gallery_cats_2", "/static/images/react_gallery_notfound_3", "/static/images/react_gallery_404_4" ]
     }
   ]
 }
