@@ -58,7 +58,7 @@
     {
       "id": 6,
       "project_name": "React Gallery App",
-      "description": "Web app built with React library built in the single page application style to display images from Flickr API.",
+      "description": "Web app made with React library. Built in the single page application style. Search for images populated by Flickr API.",
       "technologies": ["React", "React Router", "JavaScript", "HTML", "CSS"],
       "live_link": "",
       "github_link": "https://github.com/tmaltbie/react_gallery_app",
