@@ -7,7 +7,7 @@
       "technologies": ["JavaScript", "HTML", "CSS"],
       "live_link": "https://tmaltbie.github.io/randomQuoteGenerator/",
       "github_link": "https://github.com/tmaltbie/randomQuoteGenerator",
-      "image_urls": ["/static/images/randomquote_1.png", "/static/images/randomquote_2.png", "/static/images/randomQuote_3.png", "/static/images/randomQuote_4.png"]
+      "image_urls": ["/static/images/randomquote_header.png", "/static/images/randomquote_2.png", "/static/images/randomQuote_3.png", "/static/images/randomQuote_4.png"]
     },
     {
       "id": 1,
@@ -16,7 +16,7 @@
       "technologies": ["JavaScript", "HTML", "CSS"],
       "live_link": "https://tmaltbie.github.io/pagination/",
       "github_link": "https://github.com/tmaltbie/pagination",
-      "image_urls": ["/static/images/pagination_main.png", "/static/images/pagination_lastPage.png", 
+      "image_urls": ["/static/images/pagination_header.png", "/static/images/pagination_lastPage.png", 
                       "/static/images/pagination_smallSearch.png", "/static/images/pagination_noResults.png"]
     },
     {
@@ -26,7 +26,7 @@
       "technologies": ["JavaScript", "HTML", "CSS", "Regular Expressions"],
       "live_link": "https://tmaltbie.github.io/interactive-form/",
       "github_link": "https://github.com/tmaltbie/interactive-form",
-      "image_urls": ["/static/images/form_1.png", "/static/images/form_2.png", "/static/images/form_3.png", "/static/images/form_4.png"]
+      "image_urls": ["/static/images/form_header.png", "/static/images/form_2.png", "/static/images/form_3.png", "/static/images/form_4.png"]
     },
     {
       "id": 3,
@@ -35,7 +35,7 @@
       "technologies": ["JavaScript", "HTML", "CSS", "Object Oriented Programming"],
       "live_link": "https://tmaltbie.github.io/oop_game/",
       "github_link": "https://github.com/tmaltbie/oop_game",
-      "image_urls": ["/static/images/gameshow_1.png", "/static/images/gameshow_2.png", "/static/images/gameshow_3.png", "/static/images/gameshow_4.png"]
+      "image_urls": ["/static/images/gameshow_header.png", "/static/images/gameshow_2.png", "/static/images/gameshow_3.png", "/static/images/gameshow_4.png"]
     },
     {
       "id": 4,
@@ -44,7 +44,7 @@
       "technologies": ["JavaScript", "HTML", "CSS", "Fetch API"],
       "live_link": "https://tmaltbie.github.io/public_api_request/",
       "github_link": "https://github.com/tmaltbie/public_api_request",
-      "image_urls": ["/static/images/api_1.png", "/static/images/api_2.png", "/static/images/api_3.png", "/static/images/api_4.png"]
+      "image_urls": ["/static/images/apiStartup_header.png", "/static/images/api_2.png", "/static/images/api_3.png", "/static/images/api_4.png"]
     },
     {
       "id": 5,
@@ -53,16 +53,16 @@
       "technologies": ["JavaScript", "HTML", "CSS", "Webflow"],
       "live_link": "https://dinosaur-quiz.webflow.io",
       "github_link": "",
-      "image_urls": ["/static/images/dinosaurquiz_1.png", "/static/images/dinosaurquiz_2.png", "/static/images/dinosaurquiz_3.png", "/static/images/dinosaurquiz_4.png"]
+      "image_urls": ["/static/images/dinosaurquiz_header.png", "/static/images/dinosaurquiz_2.png", "/static/images/dinosaurquiz_3.png", "/static/images/dinosaurquiz_4.png"]
     },
     {
       "id": 6,
       "project_name": "React Gallery App",
       "description": "Web app made with React library. Built in the single page application style. Search for images populated by Flickr API.",
       "technologies": ["React", "React Router", "JavaScript", "HTML", "CSS"],
-      "live_link": "",
+      "live_link": "https://reactgallerybytrevor.netlify.app/",
       "github_link": "https://github.com/tmaltbie/react_gallery_app",
-      "image_urls": ["/static/images/react_gallery_home_1.png", "/static/images/react_gallery_cats_2.png", "/static/images/react_gallery_notfound_3.png", "/static/images/react_gallery_404_4.png" ]
+      "image_urls": ["/static/images/reactgallery_header.png", "/static/images/react_gallery_cats_2.png", "/static/images/react_gallery_notfound_3.png", "/static/images/react_gallery_404_4.png" ]
     }
   ]
 }

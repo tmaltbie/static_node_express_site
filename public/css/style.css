@@ -183,11 +183,11 @@ a:hover{
   left: 0;
   top: 0;
   padding: 15px;
-  transition: opacity 0.5s
+  transition: opacity 0.5s;
 }
 
 .projects:hover .overlay {
-  opacity: .9;
+  opacity: .8;
 }
 
 .cell .overlay h5 {
@@ -205,7 +205,7 @@ a:hover{
   font-style: italic;
 }
 
-.projects img {
+/* .projects img {
  width: 500px;
  height: 195px; 
-}
+} */
