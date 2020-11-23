@@ -32,9 +32,9 @@
       "project_name": "Full-Stack Client",
       "description": "React web app built in combination with REST API",
       "technologies": ["JavaScript", "React", "REST API", "Express", "HTML", "CSS"],
-      "live_link": "https://github.com/tmaltbie/full_stack_react_api",
+      "live_link": "",
       "github_link": "https://github.com/tmaltbie/react_gallery_app",
-      "image_urls": ["/static/images/full_stack_home.png", "/static/images/full_stack_2", "/static/images/full_stack_3", "/static/images/full_stack_4"]
+      "image_urls": ["/static/images/full_stack_home.png", "/static/images/full_stack_2.png", "/static/images/full_stack_3.png", "/static/images/full_stack_4.png"]
     }
   ]
 }
