@@ -1,35 +1,7 @@
 {
   "projects": [
     {
-      "id": 0,
-      "project_name": "Random Quote Generator",
-      "description": "Generate random quotes from an array of objects.",
-      "technologies": ["JavaScript", "HTML", "CSS"],
-      "live_link": "https://tmaltbie.github.io/randomQuoteGenerator/",
-      "github_link": "https://github.com/tmaltbie/randomQuoteGenerator",
-      "image_urls": ["/static/images/randomquote_header.png", "/static/images/randomquote_2.png", "/static/images/randomQuote_3.png", "/static/images/randomQuote_4.png"]
-    },
-    {
       "id": 1,
-      "project_name": "List Pagination and Filtering",
-      "description": "Use 'pagination' to display and navigate long list of students. Includes a search filter.",
-      "technologies": ["JavaScript", "HTML", "CSS"],
-      "live_link": "https://tmaltbie.github.io/pagination/",
-      "github_link": "https://github.com/tmaltbie/pagination",
-      "image_urls": ["/static/images/pagination_header.png", "/static/images/pagination_lastPage.png", 
-                      "/static/images/pagination_smallSearch.png", "/static/images/pagination_noResults.png"]
-    },
-    {
-      "id": 2,
-      "project_name": "Interactive Form",
-      "description": "Enhanced registration form with conditional behavior and interactivty, validating user input with Regular Expressions and helpful error messages.",
-      "technologies": ["JavaScript", "HTML", "CSS", "Regular Expressions"],
-      "live_link": "https://tmaltbie.github.io/interactive-form/",
-      "github_link": "https://github.com/tmaltbie/interactive-form",
-      "image_urls": ["/static/images/form_header.png", "/static/images/form_2.png", "/static/images/form_3.png", "/static/images/form_4.png"]
-    },
-    {
-      "id": 3,
       "project_name": "OOP Game Show App",
       "description": "Browser-based word guessing game created with JavaScript and Object-Oriented Programming.",
       "technologies": ["JavaScript", "HTML", "CSS", "Object Oriented Programming"],
@@ -38,7 +10,7 @@
       "image_urls": ["/static/images/gameshow_header.png", "/static/images/gameshow_2.png", "/static/images/gameshow_3.png", "/static/images/gameshow_4.png"]
     },
     {
-      "id": 4,
+      "id": 2,
       "project_name": "Public API Requests",
       "description": "Request JSON object from public API and asynchronously handle data to display fictional company employee directory.",
       "technologies": ["JavaScript", "HTML", "CSS", "Fetch API"],
@@ -47,22 +19,22 @@
       "image_urls": ["/static/images/apiStartup_header.png", "/static/images/api_2.png", "/static/images/api_3.png", "/static/images/api_4.png"]
     },
     {
-      "id": 5,
-      "project_name": "Dinosaur Quiz",
-      "description": "Online quiz utilizing JavaScript. Designed with Webflow.",
-      "technologies": ["JavaScript", "HTML", "CSS", "Webflow"],
-      "live_link": "https://dinosaur-quiz.webflow.io",
-      "github_link": "",
-      "image_urls": ["/static/images/dinosaurquiz_header.png", "/static/images/dinosaurquiz_2.png", "/static/images/dinosaurquiz_3.png", "/static/images/dinosaurquiz_4.png"]
-    },
-    {
-      "id": 6,
+      "id": 3,
       "project_name": "React Gallery App",
       "description": "Web app made with React library. Built in the single page application style. Search for images populated by Flickr API.",
       "technologies": ["React", "React Router", "JavaScript", "HTML", "CSS"],
       "live_link": "https://reactgallerybytrevor.netlify.app/",
       "github_link": "https://github.com/tmaltbie/react_gallery_app",
       "image_urls": ["/static/images/reactgallery_header.png", "/static/images/react_gallery_cats_2.png", "/static/images/react_gallery_notfound_3.png", "/static/images/react_gallery_404_4.png" ]
+    },
+    {
+      "id": 4,
+      "project_name": "Full-Stack Client",
+      "description": "React web app built in combination with REST API",
+      "technologies": ["JavaScript", "React", "REST API", "Express", "HTML", "CSS"],
+      "live_link": "https://github.com/tmaltbie/full_stack_react_api",
+      "github_link": "https://github.com/tmaltbie/react_gallery_app",
+      "image_urls": ["/static/images/full_stack_home.png", "/static/images/full_stack_2", "/static/images/full_stack_3", "/static/images/full_stack_4"]
     }
   ]
 }
